@@ -1,0 +1,13 @@
+.completed {
+    text-decoration: line-through;
+    background-color: rgba(0,0,0,.1);
+}
+
+li {
+    padding: 10px;
+}
+
+li button {
+    margin-left: 10px;
+    float: right;
+}
