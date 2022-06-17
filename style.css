@@ -1,13 +1,66 @@
-.completed {
-    text-decoration: line-through;
-    background-color: rgba(0,0,0,.1);
-}
-
 li {
     padding: 10px;
+    margin: 5px;
+    list-style-type: none;
+    background-color:rgba(0,255,0,.1);
+}
+
+li:hover {
+    background-color: rgba(0,255,0,.2);
+}
+
+li.completed {
+    text-decoration: line-through;
+    background-color: rgba(0,0,0,.1);
 }
 
 li button {
     margin-left: 10px;
     float: right;
+    border: none;
+    font-weight: bold;
+    padding: 4px;
+}
+
+.complete-btn {
+    color: white;
+    background-color: #66dd44;
+}
+
+.delete-btn {
+    color: white;
+    background-color: #dd6644;
+}
+
+#add-task-btn {
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+ul, form {
+    width: 50%;
+    margin: auto;
+    min-width: 400px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    width: 40%;
+}
+
+input#task-name {
+    width: 100%;
+    text-align: center;
+    border: 2px solid dodgerblue;
+}
+
+#task-name:focus {
+    border: 2px solid dodgerblue;
+    border-radius: 0;
 }
